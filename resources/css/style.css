@@ -53,11 +53,11 @@ nav {
 /* Banner Styles */
 .banner {
   display: flex;
-  background-color: lightgrey;
+  background-color: rgb(230,230,230);
 }
 
 .banner-image {
-  padding: 2rem 1.5rem;
+  margin: 2rem 1.5rem;
   width: 60%;
 }
 
@@ -105,11 +105,10 @@ nav {
 /* Information Styles */
 .main-info {
   display: flex;
-  flex-direction: row;
 }
 
 .info-left {
-  width: 60%;
+  width: 69%;
 }
 
 .info-image {
@@ -145,11 +144,11 @@ nav {
   padding: 2rem 0;
 }
 
-  .info-right {
+.info-right {
     display: flex;
     flex-direction: column;
     width: 40%;
-  }
+}
 
 .infoblock {
   display: flex;
@@ -157,8 +156,9 @@ nav {
 
 .infoblock img {
   width: 35%;
-  height: auto;
+  /* height: auto; */
   margin-left: 1rem;
+  margin-right: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -167,8 +167,32 @@ nav {
   width: 65%;
 }
 
+.infoblock.lecture {
+  background-color: rgb(230,230,230);
+}
+
 .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.info .title {
+  font-size: 1.5rem;
+  color: rgb(77,77,77);
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.info .content {
+  font-size: 1.25rem;
+  color: rgb(179,179,179);
+  padding-bottom: .5rem;
+  line-height: 2rem;
+}
+
+.info .readmore a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: blue;
 }
