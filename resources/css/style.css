@@ -1,7 +1,11 @@
+/* STYLES */
+
+/* Troubleshooting Styles */
 div, nav, span, img, h1, h2, h3, footer {
   border: 1px solid black;
 }
 
+/* Universal Styles */
 body {
   font-family: Helvetica;
   font-size: 16px;
@@ -148,6 +152,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .infoblock {
@@ -156,7 +162,7 @@ nav {
 
 .infoblock img {
   width: 35%;
-  /* height: auto; */
+  height: auto;
   margin-left: 1rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
@@ -171,6 +177,10 @@ nav {
   background-color: rgb(230,230,230);
 }
 
+.infoblock.lecture .info .title {
+  background-color: rgb(230,230,230);
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -182,6 +192,7 @@ nav {
   color: rgb(77,77,77);
   font-weight: bold;
   padding-bottom: .5rem;
+  padding-left: 0;
 }
 
 .info .content {
@@ -195,4 +206,155 @@ nav {
   font-size: 1.25rem;
   text-decoration: none;
   color: blue;
+}
+
+/* Start Learning Styles */
+.start-learning {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230,230,230);
+  padding-bottom: 2rem;
+}
+
+.start-learning .start {
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(77,77,77);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.main-courses {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+}
+
+.courseblock-center {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.courseblock img {
+  height: auto;
+}
+
+.courseblock-center img {
+  height: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: rgb(77,77,77);
+  font-weight: bold;
+  background-color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.courses {
+  font-size: 1.25rem;
+  color: rgb(179,179,179);
+  background-color: white;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+.coursenames {
+  font-size: 1.25rem;
+  color: rgb(179,179,179);
+  background-color: white;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Start Thesis Styles */
+.thesis-exhibit {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-title {
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(77,77,77);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.exhibits {
+  display: flex;
+}
+
+.exhibits-left {
+  width: 60%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.exhibits-left video {
+  width: 100%;
+}
+
+.exhibit-title {
+  font-size: 1.5rem;
+  color: rgb(77,77,77);
+  font-weight: bold;
+  line-height: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.exhibit-description {
+  font-size: 1.25rem;
+  color: rgb(179,179,179);
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.exhibit {
+  display: flex;
+}
+
+.exhibit.top {
+  background-color: rgb(230,230,230)
+}
+
+.exhibit img {
+  margin: 1rem;
+  width: 35%;
+  height: auto;
+}
+
+.exhibit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Start Footer Styes */
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(179,179,179);
+  margin: 1rem 3rem 1.5rem 1.5rem;
+}
+
+.terms a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: rgb(179,179,179);
 }
