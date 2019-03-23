@@ -1,0 +1,175 @@
+div, nav, span, img, h1, h2, h3, footer {
+  border: 1px solid black;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+/* Nav Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+
+.main-logo img {
+  height: 2.75rem;
+}
+
+.main-logo .colmar {
+  color: rgb(77,77,77);
+  font-weight: bold;
+}
+
+.main-logo .academy {
+  color: rgb(179,179,179);
+}
+
+.navbar ul {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.navbar ul li {
+  padding-left: 1rem;
+}
+
+.navbar ul li a {
+  color: rgb(77,77,77);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.banner-image {
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.banner-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner-text span {
+  margin: 1rem 0;
+}
+
+.banner-text .heading1 {
+  font-size: 3rem;
+  color: rgb(77,77,77);
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.banner-text .heading2 {
+  font-size: 1.5rem;
+  color: rgb(77,77,77);
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.banner-button {
+  margin: 1rem 0;
+  padding: .5rem 0;
+  background-color: rgb(77,77,77);
+  text-align: center;
+}
+
+/* Information Styles */
+.main-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-left {
+  width: 60%;
+}
+
+.info-image {
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.info-image img {
+  width: 100%;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 1.5rem;
+}
+
+.info-text .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(77,77,77);
+  padding-bottom: 1.5rem;
+}
+
+.info-text .quote {
+  font-size: 1.25rem;
+  color: rgb(179,179,179);
+}
+
+.info-text .signed {
+  font-size: 1.25rem;
+  color: rgb(77,77,77);
+  padding: 2rem 0;
+}
+
+  .info-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+.infoblock {
+  display: flex;
+}
+
+.infoblock img {
+  width: 35%;
+  height: auto;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.infoblock .info {
+  width: 65%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
