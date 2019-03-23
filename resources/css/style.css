@@ -113,8 +113,7 @@ nav {
 }
 
 .info-image {
-  padding: 2rem 1.5rem;
-  width: 100%;
+  margin: 2rem 1.5rem;
 }
 
 .info-image img {
@@ -159,9 +158,9 @@ nav {
 .infoblock img {
   width: 35%;
   height: auto;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .infoblock .info {
