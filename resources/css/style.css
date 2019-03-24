@@ -11,8 +11,22 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 4rem;
+  color: rgb(139, 0, 0);
+  font-weight: bold;
+  line-height: 5.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(77, 77, 77);
+  font-weight: 500;
+  line-height: 3.25rem;
+}
+
 /* Nav Styles */
-.nav-desktop {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,41 +37,46 @@ body {
   background-color: white;
 }
 
-.nav-desktop .main-logo {
+header .main-logo {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
   font-size: 2rem;
 }
 
-.nav-desktop .main-logo img {
+header .main-logo img {
   height: 3.25rem;
 }
 
-.nav-desktop .main-logo .colmar {
-  color: rgb(77,77,77);
+header .main-logo .colmar {
+  color: rgb(139, 0, 0);
   font-family: 'Kanit', sans-serif;
   font-weight: bold;
 }
 
-.nav-desktop .main-logo .academy {
-  color: rgb(179,179,179);
+header .main-logo .academy {
+  color: rgb(218, 165, 32);
   font-family: 'Kanit', sans-serif;
 }
 
-.nav-desktop .navbar ul {
+nav ul {
   display: flex;
   margin-right: 1.5rem;
 }
 
-.nav-desktop .navbar ul li {
+nav ul li {
   padding-left: 1rem;
 }
 
-.nav-desktop .navbar ul li a {
-  color: rgb(77,77,77);
+nav ul li a {
+  color: rgb(218, 165, 32);
   font-size: 1.25rem;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(139, 0, 0);
+  transition: color 1000ms linear;
 }
 
 .nav-mobile {
@@ -65,7 +84,10 @@ body {
 }
 
 @media only screen and (max-width: 470px) {
-  .nav-desktop {
+  .main-logo {
+    display: none;
+  }
+  nav {
     display: none;
   }
   .nav-mobile {
@@ -108,29 +130,29 @@ body {
   color: white;
 }
 
-.banner-text span {
+.banner-text h1, h2 {
   margin: 1rem 0;
-}
-
-.banner-text .heading1 {
-  font-size: 4rem;
-  color: rgb(77,77,77);
-  font-weight: bold;
-  line-height: 5.25rem;
-}
-
-.banner-text .heading2 {
-  font-size: 2rem;
-  color: rgb(77,77,77);
-  font-weight: 500;
-  line-height: 3.25rem;
 }
 
 .banner-button {
   margin: 1rem 0;
   padding: .5rem 0;
   font-size: 2rem;
-  background-color: rgb(77,77,77);
+  color: rgb(218, 165, 32);
+  background-color: rgb(139, 0, 0);
+  border: 5px solid rgb(218, 165, 32);
+  text-align: center;
+}
+
+.banner-button:hover {
+  margin: 1rem 0;
+  padding: .5rem 0;
+  font-size: 2rem;
+  color: rgb(139, 0, 0);
+  background-color: rgb(218, 165, 32);
+  border: 5px solid rgb(139, 0, 0);
+  transition: color 500ms linear;
+  transition: background-color 500ms linear;
   text-align: center;
 }
 
@@ -140,7 +162,7 @@ body {
     width: 100%;
     border-bottom: 1px solid rgb(230,230,230);
   }
-  .banner-text span {
+  .banner-text h1, h2 {
     margin: 0;
     display: block;
   }
@@ -155,16 +177,15 @@ body {
     display: block;
     width: 100%;
   }
-  .banner-text .heading1 {
+  .banner-text h1 {
     font-size: 2.5rem;
     line-height: 3.25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-left: 1rem;
   }
-  .banner-text .heading2 {
+  .banner-text h2 {
     font-size: 1.75rem;
-    color: rgb(77,77,77);
     font-weight: 500;
     line-height: 2.5rem;
     margin-bottom: 1.5rem;
@@ -176,7 +197,22 @@ body {
     margin-right: 1rem;
     padding: 1rem 0;
     font-size: 1.5rem;
-    background-color: rgb(153,153,153);
+    color: rgb(218, 165, 32);
+    background-color: rgb(139, 0, 0);
+    border: 5px solid rgb(218, 165, 32);
+    text-align: center;
+  }
+  .banner-button:hover {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: rgb(139, 0, 0);
+    background-color: rgb(218, 165, 32);
+    border: 5px solid rgb(139, 0, 0);
+    transition: color 500ms linear;
+    transition: background-color 500ms linear;
     text-align: center;
   }
 }
@@ -208,7 +244,7 @@ body {
 .info-text .heading {
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   padding-bottom: 1.5rem;
 }
 
@@ -277,7 +313,7 @@ body {
 
 .info .title {
   font-size: 2rem;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   font-weight: bold;
   padding-bottom: .5rem;
   padding-left: 0;
@@ -295,7 +331,12 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   text-decoration: none;
-  color: rgb(153,153,255);
+  color: rgb(218, 165, 32);
+}
+
+.info .readmore a:hover {
+  color: rgb(139, 0, 0);
+  transition: color 1000ms linear;
 }
 
 @media only screen and (max-width: 470px) {
@@ -336,7 +377,7 @@ body {
   }
   .info .title {
     font-size: 2rem;
-    color: rgb(77,77,77);
+    color: rgb(139, 0, 0);
     font-weight: bold;
     padding-bottom: .5rem;
     padding-left: 2rem;
@@ -356,9 +397,15 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
     text-decoration: none;
-    color: rgb(153,153,255);
+    color: rgb(218, 165, 32);
     padding-left: 2rem;
   }
+
+  .info .readmore a:hover {
+    color: rgb(139, 0, 0);
+    transition: color 1000ms linear;
+  }
+
   .infoblock.lecture {
     background-color: white;
     margin-bottom: 2rem;
@@ -381,7 +428,7 @@ body {
   align-self: center;
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -421,7 +468,7 @@ body {
 
 .title {
   font-size: 1.75rem;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   font-weight: 500;
   background-color: white;
   padding-left: 1rem;
@@ -463,7 +510,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(77,77,77);
+    color: rgb(139, 0, 0);
     padding-bottom: 1rem;
     padding-top: 2rem;
   }
@@ -506,17 +553,35 @@ body {
   .title-link {
     display: block;
     font-size: 1.75rem;
-    color: rgb(77,77,77);
     font-weight: 500;
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    background-color: rgb(230,230,230);
+    color: rgb(218, 165, 32);
+    background-color: rgb(139, 0, 0);
+    border: 5px solid rgb(218, 165, 32);
   }
 
-  .title-link a {
+  .title-link:hover {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: rgb(139, 0, 0);
+    background-color: rgb(218, 165, 32);
+    border: 5px solid rgb(139, 0, 0);
+    transition: color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .coursesblock a {
     text-decoration: none;
-    color: rgb(77,77,77);
+  }
+
+  .coursesblock-center a {
+    text-decoration: none;
   }
 
   .courses {
@@ -538,7 +603,7 @@ body {
   align-self: center;
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -559,7 +624,7 @@ body {
 
 .exhibit-title {
   font-size: 1.75rem;
-  color: rgb(77,77,77);
+  color: rgb(139, 0, 0);
   font-weight: 500;
   line-height: 3rem;
   margin-top: 1.5rem;
@@ -610,7 +675,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(77,77,77);
+    color: rgb(139, 0, 0);
     padding-bottom: 1rem;
     padding-top: 2rem;
   }
@@ -642,7 +707,7 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
-  color: rgb(140,140,140);
+  color: rgb(139, 0, 0);
   padding: 1rem 3rem 1.5rem 1.5rem;
   border-top: solid 1px rgb(230,230,230);
 }
@@ -650,7 +715,14 @@ footer {
 .terms a {
   padding-left: 1rem;
   text-decoration: none;
-  color: rgb(140,140,140);
+  color: rgb(218, 165, 32);
+}
+
+.terms a:hover {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: rgb(139, 0, 0);
+  transition: color 1000ms linear;
 }
 
 @media only screen and (max-width: 470px) {
