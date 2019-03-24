@@ -165,6 +165,7 @@ nav {
 
 .infoblock {
   display: flex;
+  align-items: flex-start;
 }
 
 .infoblock img {
@@ -192,6 +193,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .info .title {
@@ -241,24 +244,29 @@ nav {
 
 .row1 {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .row2 {
   display: flex;
 }
 
-.courseblock-center {
+.coursesblock {
+  background-color: white;
+  width: 100%;
+}
+
+.coursesblock-center {
   margin-left: 2rem;
   margin-right: 2rem;
   background-color: white;
+  width: 100%;
 }
 
 .courseblock img {
-  height: auto;
 }
 
 .courseblock-center img {
-  height: auto;
 }
 
 .title {
