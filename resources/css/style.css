@@ -237,7 +237,8 @@ nav {
 
 .main-courses {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
@@ -263,10 +264,8 @@ nav {
   width: 100%;
 }
 
-.courseblock img {
-}
-
-.courseblock-center img {
+.course-image {
+  width: 100%;
 }
 
 .title {
