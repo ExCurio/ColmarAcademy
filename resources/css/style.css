@@ -1,9 +1,9 @@
 /* STYLES */
 
 /* Troubleshooting Styles */
-/* div, nav, span, img, h1, h2, h3, footer {
+div, nav, span, img, h1, h2, h3, footer {
   border: 1px solid black;
-} */
+}
 
 /* Universal Styles */
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 /* Nav Styles */
-nav {
+.nav-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,41 +23,61 @@ nav {
   background-color: white;
 }
 
-.main-logo {
+.nav-desktop .main-logo {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
   font-size: 2rem;
 }
 
-.main-logo img {
-  height: 2.75rem;
+.nav-desktop .main-logo img {
+  height: 3.25rem;
 }
 
-.main-logo .colmar {
+.nav-desktop .main-logo .colmar {
   color: rgb(77,77,77);
   font-family: 'Kanit', sans-serif;
   font-weight: bold;
 }
 
-.main-logo .academy {
+.nav-desktop .main-logo .academy {
   color: rgb(179,179,179);
   font-family: 'Kanit', sans-serif;
 }
 
-.navbar ul {
+.nav-desktop .navbar ul {
   display: flex;
   margin-right: 1.5rem;
 }
 
-.navbar ul li {
+.nav-desktop .navbar ul li {
   padding-left: 1rem;
 }
 
-.navbar ul li a {
+.nav-desktop .navbar ul li a {
   color: rgb(77,77,77);
   font-size: 1.25rem;
   text-decoration: none;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+  }
 }
 
 /* Banner Styles */
@@ -93,24 +113,71 @@ nav {
 }
 
 .banner-text .heading1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: rgb(77,77,77);
   font-weight: bold;
-  line-height: 4rem;
+  line-height: 5.25rem;
 }
 
 .banner-text .heading2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(77,77,77);
-  font-weight: bold;
-  line-height: 3rem;
+  font-weight: 500;
+  line-height: 3.25rem;
 }
 
 .banner-button {
   margin: 1rem 0;
   padding: .5rem 0;
+  font-size: 2rem;
   background-color: rgb(77,77,77);
   text-align: center;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    display: block;
+    width: 100%;
+  }
+  .banner-text span {
+    margin: 0;
+    display: block;
+  }
+  .banner-text a {
+    display: block;
+  }
+  .banner-image {
+    width: 100%;
+    margin: 0;
+  }
+  .banner-text {
+    display: block;
+    width: 100%;
+  }
+  .banner-text .heading1 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  .banner-text .heading2 {
+    font-size: 1.75rem;
+    color: rgb(77,77,77);
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+  .banner-button {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    background-color: rgb(153,153,153);
+    text-align: center;
+  }
 }
 
 /* Information Styles */
@@ -133,20 +200,22 @@ nav {
 .info-text {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 90%;
   padding-left: 1.5rem;
 }
 
 .info-text .heading {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: rgb(77,77,77);
   padding-bottom: 1.5rem;
 }
 
 .info-text .quote {
-  font-size: 1.25rem;
-  color: rgb(179,179,179);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(140,140,140);
+  line-height: 2.25rem;
 }
 
 .info-text .signed {
@@ -198,7 +267,7 @@ nav {
 }
 
 .info .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(77,77,77);
   font-weight: bold;
   padding-bottom: .5rem;
@@ -207,15 +276,23 @@ nav {
 
 .info .content {
   font-size: 1.25rem;
-  color: rgb(179,179,179);
+  font-weight: 300;
+  color: rgb(140,140,140);
   padding-bottom: .5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .info .readmore a {
   font-size: 1.25rem;
+  font-weight: 300;
   text-decoration: none;
-  color: blue;
+  color: rgb(153,153,255);
+}
+
+@media only screen and (max-width: 470px) {
+  .info-left {
+    display: none;
+  }
 }
 
 /* Start Learning Styles */
@@ -228,7 +305,7 @@ nav {
 
 .start-learning .start {
   align-self: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: rgb(77,77,77);
   padding-bottom: 2rem;
@@ -269,7 +346,7 @@ nav {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: rgb(77,77,77);
   font-weight: bold;
   background-color: white;
@@ -279,7 +356,8 @@ nav {
 
 .courses {
   font-size: 1.25rem;
-  color: rgb(179,179,179);
+  font-weight: 300;
+  color: rgb(140,140,140);
   background-color: white;
   padding-left: 1rem;
   padding-top: .5rem;
@@ -287,8 +365,10 @@ nav {
 
 .coursenames {
   font-size: 1.25rem;
-  color: rgb(179,179,179);
+  font-weight: 300;
+  color: rgb(140,140,140);
   background-color: white;
+  line-height: 1.75rem;
   padding-left: 1rem;
   padding-top: .5rem;
   padding-bottom: 1.5rem;
@@ -302,7 +382,7 @@ nav {
 
 .thesis-title {
   align-self: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: rgb(77,77,77);
   padding-bottom: 2rem;
@@ -324,7 +404,7 @@ nav {
 }
 
 .exhibit-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: rgb(77,77,77);
   font-weight: bold;
   line-height: 3rem;
@@ -334,7 +414,8 @@ nav {
 
 .exhibit-description {
   font-size: 1.25rem;
-  color: rgb(179,179,179);
+  font-weight: 300;
+  color: rgb(140,140,140);
   line-height: 2rem;
   margin-bottom: 2rem;
 }
@@ -363,12 +444,13 @@ nav {
 footer {
   display: flex;
   justify-content: space-between;
-  color: rgb(179,179,179);
-  margin: 1rem 3rem 1.5rem 1.5rem;
+  color: rgb(140,140,140);
+  padding: 1rem 3rem 1.5rem 1.5rem;
+  border-top: solid 1px rgb(230,230,230);
 }
 
 .terms a {
   padding-left: 1rem;
   text-decoration: none;
-  color: rgb(179,179,179);
+  color: rgb(140,140,140);
 }
